@@ -1,0 +1,14 @@
+.cloud {
+    @include respond(tab-port)  {
+       display: none;
+    }
+}
+
+.tags{
+    color: $color-grey-dark;
+    position: absolute;
+    bottom: 0rem;
+    left: 8rem;
+    font-size: 1.8rem;
+    font-family: 'Myriad Italic', cursive;
+}

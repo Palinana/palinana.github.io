@@ -25,7 +25,7 @@ html {
 
 body {
     box-sizing: border-box;
-    padding: 3rem;          //viewport border
+    padding: 2rem;          //viewport border
 
     @include respond(tab-port) { 
         padding: 0;    

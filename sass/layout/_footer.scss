@@ -23,14 +23,20 @@
     }
 
     &__navigation {
-        border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
-        display: inline-block;  // to finish with the text
+        display: inline-block;  
 
         @include respond(tab-port) { 
             width: 100%;
             text-align: center;
         }
+    }
+
+    &__contact {
+        width: 40%;
+        margin: 0 auto;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid $color-grey-dark;
     }
 
     &__list {
@@ -42,6 +48,16 @@
         &:not(:last-child){  
             margin-right: 1.5rem;
         }   
+
+        &:first-child + &__item-image { 
+            height: 5rem;
+            width: 5rem; 
+        }
+    }
+
+    &__item-image {
+        height: 2.5rem;
+        width: 2.5rem;
     }
 
     &__link {
@@ -55,7 +71,7 @@
 
         &:hover,
         &:active {
-            color: $color-primary-dark;
+            // color: $color-primary-dark;
             box-shadow: 0 1rem 2rem rgba($color-black, .4);
         }
     }
@@ -63,7 +79,7 @@
     &__copyright {
         border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
-        width: 85%; //decreasing the width to center 
+        width: 85%; 
         float: right;
 
         @include respond(tab-port) { 
