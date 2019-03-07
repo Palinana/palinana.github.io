@@ -335,13 +335,14 @@ body {
   .composition__photo {
     width: 100%;
     height: 100%;
-    display: block; }
+    display: block;
+    border-radius: 50%;
+    object-fit: cover; }
     @media (max-width: 56.25em) {
       .composition__photo {
         float: left;
         position: relative;
-        width: 100%;
-        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
+        width: 100%; } }
 
 .project {
   width: calc((100% - 2rem) / 2);
@@ -452,12 +453,10 @@ body {
   transition: opacity 0.2s linear 0s; }
 
 .circle {
-  border-radius: 50%;
   overflow: hidden;
   width: 24rem;
   height: 23rem;
   background: no-repeat 50%;
-  object-fit: cover;
   margin: 0 auto; }
 
 #map {
