@@ -4,184 +4,253 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 
         <link href='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
 
-        <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/parker.png">
-        <script src="./index.js"></script>
         
-        <title>Palina Pasiukevich</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+        <script src="js/index.js"></script>
+        
+        <title>Palina Pasiukevich - Full-Stack Web Developer</title>
     </head>
+
     <body>
+        <!-- Portfolio Naviagtion -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="navbar-brand text-dark" id="my-name">Palina P.</div>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <header class="header">
-            <div class="navigation">
-                <nav class="navigation__navig">
-                    <a id="about" href="#me" class="navigation__link-active">About</a>
-                    <a id="projects" href="#my-projects" class="navigation__link-active">Projects</a>
-                    <a id="contact" href="#contact-me" class="navigation__link-active">Contact</a>
-                </nav>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-logo" href="img/Palina_Pasiukevich_Resume.pdf"><i class="fas fa-file nav-icon text-dark"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/palina-pa/"><i class="fab fa-linkedin nav-icon text-dark"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/Palinana"><i class="fab fa-github nav-icon text-dark"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:palinapch@gmail.com"><i class="fas fa-envelope nav-icon text-dark"></i></a>
+                    </li>
+                </ul>
             </div>
-
-            <div class="row entry-text">
-                <div class="col-1-of-2" id="entry-text__box">
-                    <div class="main-text">
-                        <div class="text-primary">
-                            <span class="text-primary-hi">Hi,</span>
-                            <span class="text-primary-main">I'm Palina,</span>
-                            <span class="text-primary-main">Fullstack Developer.</span>
-                            <span class="text-primary-sub">Front End / Back End / JavaScript</span>
-                        </div>
-                    </div>    
-                </div>
-                
-                <div class="col-1-of-2" id="buble">
-                    <div id="cl" class="cloud">
-                        <div class="cloud-element"><a href="#1">Javascript</a></div>
-                        <div class="cloud-element"><a href="#2">CSS3</a></div>
-                        <div class="cloud-element"><a href="#3">HTML5</a></div>
-                        <div class="cloud-element"><a href="#4">React</a></div>
-                        <div class="cloud-element"><a href="#5">Node.js</a></div>
-                        <div class="cloud-element"><a href="#6">Express</a></div>
-                        <div class="cloud-element"><a href="#7">Git</a></div>
-                        <div class="cloud-element"><a href="#8">SASS</a></div>
-                        <div class="cloud-element"><a href="#9">Sequelize</a></div>
-                        <div class="cloud-element"><a href="#10">Redux</a></div>
-                        <div class="cloud-element"><a href="#11">Webpack</a></div>
-                        <div class="cloud-element"><a href="#12">Babel</a></div>
-                        <div class="cloud-element"><a href="#13">SQL</a></div>
-                    </div>
-                </div>        
-            </div>         
-        </header>   
-
+        </nav>
+        
+        <!-- Portfolio Into -->
         <main>
-            <button id="btnTop" onclick="topFunction()" ><img src="img/up-arrow.png" class="btnTop-image"></button>
-            <section class="section-about" id="me">
-                <div class="row">
-                        <div class="co">
-                            <div class="circle">
-                                <img src="img/pop.jpg" alt="Photo 2" class="composition__photo">
-                            </div>
+            <button id="btnTop" onclick="topFunction()" ><img src="/img/up-arrow.svg" class="btnTop-image"></button>
+
+            <section id="about">
+                <div class="container">
+                    <div class="row about-item">
+                        <div class="col-lg-6">
+                            <h1 id="hello">Hello, I'm <span id="name">Palina</span></h1>
+                            <h4>A <span id="words">this</span> Full-Stack Web Developer</h4>
+                            
+                            <p>
+                                I’m a full-stack developer currently living in New York. 
+                                After working as a Software QA Engineer for the past few years, I've decided to take my career to the next level. 
+                                I've switched over to web development and have been thoroughly enjoying it.
+                            </p>
+                            <p>
+                                I love building web-pages and hunting for obscure bugs and I am very excited to join a team of developers to make 
+                                new friends while we create things for everyday people.
+                            </p>
+                            <h6 id="below">Below are some of my recent projects.</h6>
                         </div>
-                    <div class="u-center-text">
-                        <h3 class="about-text">About Me</h3>
-                        <p class="paragraph">
-                            I’m a full stack web developer currently living in New York. After working as a Software QA Engineer for the past few years, I've decided to take my career to the next level.
-                            I've switched over to full stack web development and have been thoroughly enjoying it. 
-                        </p>
-                        <p class="paragraph">
-                            I have always had a creative mind and a knack for problem solving. I love building web-pages and hunting for obscure bugs and I am very excited to join a team of developers
-                            to make new friends while we create things for everyday people.
-                        </p>
-                        <p class="paragraph">
-                            Below are some of my recent projects. If you have any questions, please feel free to contact me by any means.
-                        </p>
-                    </div>                 
+
+                        <div class="col-lg-5 about-item__letter">
+                            <img src="/img/lina.png"/>
+                        </div>
+
+                        <div class="col-lg text-center">
+                            <a href="index.html#block--one" class="delay-5s">
+                                <div class="downArrow bounce">
+                                    <img width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
-
-            <section class="section-features" id="my-projects">
-                <div class='u-center-text u-margin-bottom-big'>
-                    <h2 class="heading-secondary">What I've Built</h2>
-                </div>
-                <div class="row row-projects">
-                    <div class="project">
-                        <div class="project__box">
-                            <div class="project__shape">
-                                <img src="img/natours.png" alt="Tour photo" class="project__img">
+            
+            <!-- Portfolio Project 1 -->
+            <section class="block" id="block--one">
+                <div class="container">
+                    <div class="row block-item">
+                        <div class="col-lg-6 align-self-center">
+                            <div class="desktop-wrapper">
+                                <video autoplay loop>
+                                    <source src="/img/habitlite.mp4" type="video/mp4" >
+                                    Your browser does not support playing this Video
+                                </video>
                             </div>
-                            <div class='project__text' id="text">
-                                <div class='project__url'>
-                                    <a href='https://github.com/Palinana/nature-tours' class='project__link'>
-                                        <img class='project__url-logo' src='img/github-logo.png' alt='medium'/>
-                                    </a>
-                                </div>
-                            </div>
+        
                         </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="project__box">
-                            <div class="project__shape">
-                                <img src="img/habitlite.png" alt="Tour photo" class="project__img">
+                        <div class="col-lg-5 align-self-center">
+                            <div class="block-item__heading">
+                                <img src="/img/HabitLiteLogo.png" />
                             </div>
-                            <div class='project__text'>
-                                <div class='project__url'>
-                                    <a href='https://github.com/Palinana/HabitLite' class='project__link'>
-                                        <img class='project__url-logo' src='img/github-logo.png' alt='medium'/>
-                                    </a>
-                                </div>
+                            <p class="block-item__subheading">
+                                HabitLite helps users to keep track of their goals and 
+                                new habits by giving points and providing daily charts 
+                                of their progress.
+                            </p>
+                            <div class="block-item__skills">
+                                <h5 class="skills" id="skills--one">Skills</h5>
+                                <p>React, Redux, Javascript, Node.js, Express.js, PostgreSQL, IBM Watson, Web Push, PWA, Victory.js, CSS</p>
                             </div>
-                        </div>
-                    </div>
-    
-                    <div class="project">
-                        <div class="project__box">
-                            <div class="project__shape">
-                                <img src="img/nova.png" alt="Tour photo" class="project__img">
-                            </div>
-                            <div class='project__text' id="text">
-                                <div class='project__url'>
-                                    <a href='https://github.com/Palinana/store' class='project__link'>
-                                        <img class='project__url-logo' src='img/github-logo.png' alt='medium'/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="project__box">
-                            <div class="project__shape">
-                                <img src="img/rocket.png" alt="Tour photo" class="project__img">
-                            </div>
-                            <div class='project__text' id="text">
-                                <div class='project__url'>
-                                    <a href='https://github.com/Palinana/project-app' class='project__link'>
-                                        <img class='project__url-logo' src='img/github-logo.png' alt='medium'/>
-                                    </a>
-                                </div>
+                            <div class="block-item__link--one block-item__link">
+                                <a href='https://github.com/Palinana/HabitLite'>View Demo <span><i class="fas fa-arrow-alt-circle-right"></i></span></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!-- Portfolio Project 2 -->
+            <section class="block" id="block--two">
+                <div class="container">
+                    <div class="row block-item">
+                        <div class="col-lg-6 align-self-center">
+                            <div class="desktop-wrapper">
+                                <img width="560" height="315" src="/img/rocketScreen.png" frameborder="0" allowfullscreen></img>
+                            </div>
+        
+                        </div>
+                        <div class="col-lg-5 align-self-center">
+                            <div class="block-item__heading">
+                                <img src="/img/rocket.png" />
+                                <h4 id="heading--one">Rocket</h4>
+                            </div>
+                            <p class="block-item__subheading">
+                                    A project management application with authentication and 
+                                    cloud functions that helps users to track projects.
+                            </p>
+                            <div class="block-item__skills">
+                                <h5 class="skills" id="skills--two">Skills</h5>
+                                <p>React, Redux, Javascript, Firebase</p>
+                            </div>
+                            <div class="block-item__link--two block-item__link">
+                                <a href='https://project-app-74cae.firebaseapp.com/sign-in'>View Demo <span><i class="fas fa-arrow-alt-circle-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Project 3 -->
+            <section class="block" id="block--three">
+                <div class="container">
+                    <div class="row block-item">
+                        <div class="col-lg-6 align-self-center">
+                            <div class="desktop-wrapper">                        
+                                <video autoplay loop>
+                                    <source src="/img/nova.mp4" type="video/mp4" autoplay loop muted>
+                                    Your browser does not support playing this Video
+                                </video>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-5 align-self-center">
+                            <div class="block-item__heading">
+                                <img src="/img/NovaLogo.png" />
+                                <h4 id="heading--two">Nova</h4>
+                            </div>
+                            <p class="block-item__subheading text-xs-center">
+                                An online e-commerce platform that supports unauthenticated guests, 
+                                authenticated users, and administrative users.
+                            </p>
+                            <div class="block-item__skills">
+                                <h5 class="skills" id="skills--three">Skills</h5>
+                                <p>React, Redux, Javascript, Node.js, Express.js, Sequelize, PostgreSQL, Stripe, Bootstrap</p>
+                            </div>
+                            <div class="block-item__link--three block-item__link">
+                                <a href='https://furniture-store-app-01.herokuapp.com'>View Demo <span><i class="fas fa-arrow-alt-circle-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Project 4 -->
+            <section class="block" id="block--four">
+                <div class="container">
+                    <div class="row block-item">
+                        <div class="col-lg-6 align-self-center">
+                            <div class="desktop-wrapper">
+                                <img width="560" height="315" src="/img/chat.png" id="chat" frameborder="0" allowfullscreen></img>
+                            </div>
+        
+                        </div>
+                        <div class="col-lg-5 align-self-center">
+                            <div class="block-item__heading">
+                                <img src="/img/devChatLogo.png" id="chat-logo"/>
+                                <h4 id="heading--three">DevChat</h4>
+                            </div>
+                            <p class="block-item__subheading">
+                                A communications application that allows users to chat in public and private channels.
+                            </p>
+                            <div class="block-item__skills">
+                                <h5 class="skills" id="skills--four">Skills</h5>
+                                <p>React, Javascript, Firebase</p>
+                            </div>
+                            <div class="block-item__link--four block-item__link">
+                                <a href='https://dev-chat-c90a3.web.app/login'>View Demo <span><i class="fas fa-arrow-alt-circle-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Project 5 -->
+            <section class="block" id="block--five">
+                <div class="container">
+                    <div class="row block-item">
+                        <div class="col-lg-6 align-self-center">
+                            <div class="desktop-wrapper">
+                                <img width="560" height="315" src="/img/protask.png" id="protask" frameborder="0" allowfullscreen></img>
+                            </div>
+        
+                        </div>
+                        <div class="col-lg-5 align-self-center">
+                            <div class="block-item__heading">
+                                <img src="/img/proTaskLogo.png" id="protask-logo"/>
+                                <h4 id="heading--four">Pro<span>task</span></h4>
+                            </div>
+                            <p class="block-item__subheading">
+                                A project planing and time tracking application for agile teams.                            
+                            </p>
+                            <div class="block-item__skills">
+                                <h5 class="skills" id="skills--five">Skills</h5>
+                                <p>Vue, Vuetify, Javascript, Firebase</p>
+                            </div>
+                            <div class="block-item__link--five block-item__link">
+                                <a href='https://pro-task-b01f6.firebaseapp.com'>View Demo <span><i class="fas fa-arrow-alt-circle-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
-
-        <footer class="footer" id="contact-me">
-            <div class="u-center-text footer__contact">
-                <h3 class='heading-tertiary'>Contact Me</h3>
-            </div>
-            <div class="row u-padding-top-small">
-                <div class="u-center-text">
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="mailto:palinapch@gmail.com" class="footer__link">
-                                <img class='footer__item-image' src='img/mail4.png' alt='medium'/>
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                                <a href="img/Palina_Pasiukevich_Resume.pdf" class="footer__link">
-                                    <img class='footer__item-image' src='img/pdf.png' alt='medium'/>
-                                </a>
-                            </li>
-                        <li class="footer__item">
-                            <a href="https://www.linkedin.com/in/palina-pa/" class="footer__link">
-                                <img class='footer__item-image' src='img/linked.png' alt='medium'/>
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="https://github.com/Palinana" class="footer__link">
-                                <img class='footer__item-image' src='img/github.png' alt='medium'/>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
     </body>
 </html>
